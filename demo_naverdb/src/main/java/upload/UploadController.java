@@ -22,7 +22,9 @@ public class UploadController {
 	@PostMapping("/fileupload")
 	public ModelAndView uploadResult(UploadDTO dto) throws IOException {
 		// 요청 파라미터명 = dto 변수명 -> 자동 전달 주입
-		String savePath = "C:/fullstack/upload/";
+		//String savePath = "C:/fullstack/upload/";
+		String savePath = "/usr/mydir/upload/";
+		
 		String filename1 = null, newFilename1 = null, newFilename2 = null, filename2 = null;
 		
 		// 클라이언트 파일 전송 - http stream - 파일형태로 서버에서 받음
